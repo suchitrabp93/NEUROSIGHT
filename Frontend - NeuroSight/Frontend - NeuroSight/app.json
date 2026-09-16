@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "NeuroSight",
+    "slug": "NeuroSight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to describe scenes."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone for voice commands."
+        }
+      ],
+      "expo-router"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.yourname.scenedescriber"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.scenedescriber",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to describe scenes for visually impaired users.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access for voice commands.",
+        "NSSpeechRecognitionUsageDescription": "This app needs speech recognition to understand your language choice."
+      }
+    }
+  }
+}
