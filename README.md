@@ -102,8 +102,3 @@ Some features that can be added in the future are:
 
 NeuroSight is a project developed as an AI-based assistive system combining **computer vision, deep learning, OCR, face recognition, image captioning, and voice assistance** into a single application.
 
-## Author
-
-**Suchitra B P**
-
-B.E. – Artificial Intelligence and Machine Learning
